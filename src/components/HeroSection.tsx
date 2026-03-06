@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-robot.jpg";
+import heroImg from "@/assets/hero-machine.jpg";
 
 const HeroSection = () => (
   <section className="py-16 md:py-24 bg-cotton-pink-light">
