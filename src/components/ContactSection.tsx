@@ -12,10 +12,11 @@ const ContactSection = () => {
     <section id="contact" className="py-20 md:py-28 bg-cotton-blue-light">
       <div className="container max-w-xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-          Get in Touch
+          Get in touch
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Questions, party bookings, or just want to say hi? Drop us a line.
+          Questions, event inquiries, or interested in hosting a machine at your
+          venue? Send us a note.
         </p>
 
         {submitted ? (
@@ -35,6 +36,7 @@ const ContactSection = () => {
                 id="name"
                 type="text"
                 required
+                maxLength={100}
                 className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                 placeholder="Your name"
               />
@@ -47,9 +49,39 @@ const ContactSection = () => {
                 id="email"
                 type="email"
                 required
+                maxLength={255}
                 className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                 placeholder="you@example.com"
               />
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">
+                Phone (optional)
+              </label>
+              <input
+                id="phone"
+                type="tel"
+                maxLength={20}
+                className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                placeholder="(555) 123-4567"
+              />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-1.5">
+                I'm reaching out about
+              </label>
+              <select
+                id="subject"
+                required
+                className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                defaultValue=""
+              >
+                <option value="" disabled>Select a topic</option>
+                <option value="general">General question</option>
+                <option value="event">Event rental</option>
+                <option value="venue">Add a machine to our venue</option>
+                <option value="other">Other</option>
+              </select>
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
@@ -59,6 +91,7 @@ const ContactSection = () => {
                 id="message"
                 required
                 rows={4}
+                maxLength={1000}
                 className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                 placeholder="How can we help?"
               />
@@ -67,7 +100,7 @@ const ContactSection = () => {
               type="submit"
               className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
             >
-              Send Message
+              Send message
             </button>
           </form>
         )}

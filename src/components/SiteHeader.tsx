@@ -3,9 +3,9 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navItems = [
-  { label: "What We Do", href: "#features" },
+  { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Visit Us", href: "#visit" },
+  { label: "Location", href: "#location" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -22,7 +22,6 @@ const SiteHeader = () => {
           </span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -35,7 +34,6 @@ const SiteHeader = () => {
           ))}
         </nav>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -45,7 +43,6 @@ const SiteHeader = () => {
         </button>
       </div>
 
-      {/* Mobile nav */}
       {mobileOpen && (
         <nav className="md:hidden bg-background border-t border-border px-6 py-4 space-y-3">
           {navItems.map((item) => (
