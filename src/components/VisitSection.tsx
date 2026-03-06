@@ -9,7 +9,7 @@ const VisitSection = () => (
           Where: Gallatin Crossing Mall, Bozeman, Montana
         </p>
         <p className="text-sm">
-          Find the machine: Inside the mall common area (near [store/landmark – fill in]).
+          Find the machine: Inside the mall near American Eagle on the west side of the mall.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-10 items-start">
