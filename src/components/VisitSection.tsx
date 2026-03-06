@@ -27,7 +27,7 @@ const VisitSection = () => (
         <div className="rounded-2xl overflow-hidden shadow-lg">
           <iframe
             title="Big Sky Amusements location at Gallatin Crossing Mall"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.4!2d-111.06!3d45.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345444c4ba8813d%3A0x63c78cfcb6fa469a!2sGallatin%20Valley%20Mall!5e0!3m2!1sen!2sus!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.4649789482!2d-111.06052892346518!3d45.6826667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53454e0f4d4d4d4d%3A0x0!2s2825%20W%20Main%20St%2C%20Bozeman%2C%20MT%2059718!5e0!3m2!1sen!2sus!4v1700000000000"
             width="100%"
             height="320"
             style={{ border: 0 }}
