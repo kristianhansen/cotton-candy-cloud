@@ -63,7 +63,7 @@ const ContactSection = () => {
                 type="tel"
                 maxLength={20}
                 className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                placeholder="(555) 123-4567"
+                placeholder="917-293-5746"
               />
             </div>
             <div>
