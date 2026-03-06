@@ -1,17 +1,13 @@
-import gallery1 from "@/assets/hero-robot.jpg";
-import gallery2 from "@/assets/gallery-1.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery1 from "@/assets/gallery-cotton-candy.jpg";
+import gallery2 from "@/assets/gallery-kid-yellow.jpg";
+import gallery3 from "@/assets/gallery-full-machine.jpg";
+import gallery4 from "@/assets/gallery-kid-pink.jpg";
 
 const images = [
-  { src: gallery1, alt: "Machine front view" },
-  { src: gallery2, alt: "Machine making cotton candy" },
-  { src: gallery3, alt: "Flower-shaped cotton candy" },
-  { src: gallery4, alt: "Star or heart-shaped cotton candy" },
-  { src: gallery5, alt: "Kid holding cotton candy" },
-  { src: gallery6, alt: "Family enjoying cotton candy" },
+  { src: gallery1, alt: "Colorful cotton candy from the machine" },
+  { src: gallery2, alt: "Kid enjoying yellow-green cotton candy" },
+  { src: gallery3, alt: "Sweet Robo cotton candy machine with neon signage" },
+  { src: gallery4, alt: "Child holding fresh pink cotton candy" },
 ];
 
 const GallerySection = () => (
@@ -24,7 +20,7 @@ const GallerySection = () => (
         A peek at the machine, the designs it creates, and the happy customers
         who enjoy it.
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
         {images.map((img, i) => (
           <figure key={i} className="overflow-hidden rounded-2xl group">
             <img
