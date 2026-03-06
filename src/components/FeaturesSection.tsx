@@ -1,36 +1,32 @@
-import { Bot, Sparkles, Clock } from "lucide-react";
+import { Bot, Palette, Users } from "lucide-react";
 
 const features = [
   {
     icon: Bot,
-    title: "Robot Crafted",
+    title: "Robot cotton candy vending",
     description:
-      "Our automated robot spins cotton candy with precision and flair — a mesmerizing show every time.",
+      "Our Sweet Robo machine spins fluffy cotton candy 100% automatically – no staff required, just press, pay, and watch the show.",
   },
   {
-    icon: Sparkles,
-    title: "Fun Flavors",
+    icon: Palette,
+    title: "Fun shapes & colors",
     description:
-      "Choose from classic pink vanilla, blue raspberry, and rotating seasonal specials.",
+      "Choose from multiple whimsical shapes and up to six bright colors for an eye-catching treat people love to photograph.",
   },
   {
-    icon: Clock,
-    title: "Ready in Seconds",
+    icon: Users,
+    title: "Perfect for family venues",
     description:
-      "Fresh cotton candy spun on the spot in under 60 seconds. No waiting, just sweetness.",
+      "Ideal for malls, cinemas, family fun centers, and events looking for a low-maintenance attraction that delights all ages.",
   },
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="py-20 md:py-28">
+  <section id="about" className="py-20 md:py-28">
     <div className="container">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-        What We Do
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-14">
+        What we do
       </h2>
-      <p className="text-center text-muted-foreground mb-14 max-w-lg mx-auto">
-        A next-level cotton candy experience powered by robotics and a love for
-        sweets.
-      </p>
       <div className="grid md:grid-cols-3 gap-8">
         {features.map((f) => (
           <div
