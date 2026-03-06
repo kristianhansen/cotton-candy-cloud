@@ -20,7 +20,7 @@ const GallerySection = () => (
         A peek at the machine, the designs it creates, and the happy customers
         who enjoy it.
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
         {images.map((img, i) => (
           <figure key={i} className="overflow-hidden rounded-2xl group">
             <img
