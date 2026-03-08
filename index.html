@@ -9,6 +9,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Security headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google.com https://*.googleapis.com https://*.gstatic.com; frame-src https://www.google.com; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
   <!-- TODO: Set the document title to the name of your application -->
   <title>Big Sky Cotton Candy</title>
   <meta name="description" content="Created by Kristian" />
